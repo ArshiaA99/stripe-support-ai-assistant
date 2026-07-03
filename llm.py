@@ -1,4 +1,6 @@
+import os
 from groq import Groq
+from dotenv import load_dotenv
 
 def build_prompt(question, context, history_messages):
     history_block = ""
@@ -25,9 +27,16 @@ Answer:
 """
     return prompt
 
-client = Groq(
-    api_key=os.getenv("GROQ_API_KEY")
-)
+load_dotenv()
+
+api_key = os.getenv("GROQ_API_KEY")
+
+if not api_key:
+    raise RuntimeError(
+        "GROQ_API_KEY not found. Create a .env file and add your API key."
+    )
+
+client = Groq(api_key=api_key)
 
 def ask_llm(prompt):
 
