@@ -1,0 +1,257 @@
+Account
+Manage your Stripe account directly from your Dashboard. Account-related guidance, such as resetting a password, gaining access to a locked-out account, and verifying your business information can be found below and in the Account section of the Stripe Docs.
+
+The articles below only apply if your account uses the Stripe Dashboard. For other account types:
+
+If you have a Stripe Express account:
+Refer to our Stripe Express support site instead.
+If you have a Stripe Custom account:
+This means your business is connected to a platform that uses Stripe to process payments, but that platform fully controls your account and dashboard experience.
+Use that platform to access your account dashboard.
+If you require any support with your dashboard or Stripe account, reach out to your platform directly.
+
+
+Received an unrecognized Stripe login email
+Stripe emails you when your account is accessed from a new device and location. If you received an unrecognized login email and you don’t recognize the login:
+
+Review your Stripe login sessions. See information about your past Stripe logins and sign out of any suspicious sessions.
+Enable two-step authentication. Two-step authentication provides an additional security measure in addition to your password to protect your Stripe account.
+Reset your Stripe password. This prevents future access to your account if someone logged into without your permission
+
+
+Trouble signing in?
+Forgot username?
+Your username is the email address you used to register. If you’re not sure which email address you used, search your inboxes for previous Stripe emails to confirm. You can also change your email address if needed.
+
+Forgot password?
+If you forgot your password, check your password manager. Reset your password if you still can't find it. You’ll receive a confirmation email once your password is reset.
+
+Can’t complete two-step authentication?
+You have several options to remove two-step authentication if needed. You may also find these guides helpful:
+
+Lost your phone, changed your phone number, or experiencing problems with SMS? Follow our SMS troubleshooting guide.
+Having problems entering codes from your authenticator app? Follow our authenticator app troubleshooting guide.
+Express Dashboard users
+See our dedicated Stripe Express support page for more information.
+
+Custom Dashboard users
+Your business is connected to a platform that uses Stripe to process payments, but that platform fully controls your account and dashboard experience.
+
+Use that platform to access your account dashboard.
+Reach out to that platform if you need support with your Stripe account.
+
+
+
+Can’t complete two-step authentication?
+You have several options to temporarily remove two-step authentication. Read these options carefully to regain access to your account as quickly as possible.
+
+If you're having trouble with SMS or your authenticator app, you may also find our SMS troubleshooting guide or authenticator app troubleshooting guide helpful.
+
+Use your backup code
+Check if you still have your backup code. This is the easiest way to remove two-step authentication, whether or not you're an account owner.
+
+Sign in using your email and password.
+When prompted to complete two-step authentication, click Sign in another way.
+On the two-step authentication selection screen, click I don't have any of these.
+Enter your backup code. This will remove two-step authentication.
+Reset two-step authentication
+Don’t have your backup code and still can’t complete two-step authentication? Follow these steps depending on whether you're an account owner.
+
+If you’re an account owner:
+
+Submit an account recovery request to prove your identity as the account owner.
+Wait for a decision on your case, which may take up to a couple of business days.
+If your request is approved, we'll send you an email with a special link to complete the recovery process. Be sure to click this link within 48 hours.
+If your request is rejected, we'll send you an email with additional options you can use to recover your account if you're eligible. Read this email carefully and try the options it recommends.
+Sign in using your email and password.
+If you’re not an account owner:
+
+Contact an account administrator—they can reset your two-step authentication on the Team settings page. If you're not sure who to contact, try reaching out to the person who invited you to the account.
+Wait for an email with a special link to complete the recovery process.
+Sign in using your email and password.
+
+
+Change the owner of a Stripe account
+The current owner of a Stripe account can transfer ownership to an existing Super Administrator or Administrator, or to a new individual.
+
+The current owner of a Stripe account can transfer ownership to someone else, depending on the user's existing account access and permissions. They might need to transfer ownership if someone is leaving their organization, or if the responsibility of Stripe account ownership is shifting.
+
+For Stripe accounts in Brazil, the transfer of ownership is not allowed in case of individual or sole proprietorship accounts (linked to a CPF). Learn more about updating tax information in Brazil.
+
+How to transfer account ownership
+To an existing user
+
+Go to your Team settings on the Dashboard.
+Locate the user you want to make the new account owner and click the overflow menu.
+The next steps depend on whether the user is already a Super Administrator or Administrator.
+If they are: From the popup, choose the option to Transfer ownership to this user. If they are an Administrator of the account, they become a Super Administrator after the ownership transfer.
+If they are not:
+Set their role to Super Administrator and click Save.
+Click the overflow menu again for the same user and from the popup, select Transfer ownership and follow the instructions.
+To a new individual
+
+Go to Team settings on the Dashboard .
+Click +New Member.
+Add the new user’s email address and set their role to Super Administrator.
+Click Save to send them an invitation to join the account.
+After the new user has accepted the invite, go back to Team settings.
+Click the overflow menu next to their name.
+From the popup, select Transfer ownership and follow the instructions.
+What if the current account owner is no longer with the company?
+If the current owner is no longer available, you can still request an ownership transfer by contacting Stripe Support. A secure link will be shared to guide you through a digital verification process.
+
+As part of this process, you'll be asked to:
+
+Verify your identity
+
+Verify your relationship with the business
+
+The existing account owner and administrators will be notified by email and SMS when a transfer request is initiated. They can cancel the request at any point before it is finalized.
+
+Once verification is successfully completed, we will review and process the transfer.
+
+Stripe no longer uses PII verification calls for this process. If you encounter any issues during the verification process, a support agent will assist you in completing the steps.
+
+I only want to change the email address on my Stripe account. How do I do that?
+See Change the email address associated with a Stripe account.
+
+
+Close a Stripe account
+To close a Stripe account, the owner must navigate to Settings > Business > Account details in the Dashboard, ensure they're logged into the correct account, and click Close account. Before closing, it's important to pay out any existing balances. Closing a Stripe account doesn't release the owner from any liability related to the account balance. Each Stripe account must be closed individually.
+
+The owner of a Stripe account can close the account by navigating to Settings > Business > Account details in the Dashboard. On the Account details page, scroll to the bottom and click Close account.
+
+Screenshot of the Account details page on the Dashboard showing the Close account button
+Make sure you're logged in to the account that you want to close. To check which account you are currently logged into, navigate to the top right corner and select the dropdown with your business name on it. You'll see a list of all the accounts associated with your email login. The top account name (selected in purple) is the account you're currently logged into.
+Screenshot of the Dashboard showing a dropdown of accounts associated with your email
+Check that you've paid out any existing balances before closing your Stripe account.
+Once a Stripe account is closed, it can't be reopened.
+We recommend exporting the data in the account to a CSV file before closing it.
+Additional Information
+Closing your Stripe account doesn't release you from any liability related to your account balance, including but not limited to negative balances and disputes. For this reason, we're unable to close accounts with a negative balance. Once you close your Stripe account, you'll no longer be able to process any refunds, issue any payments, or respond to any customer disputes. If you have any reason to believe that you may have further refunds to issue or disputes to respond to, we recommend keeping your account open until those have been resolved.
+Read more information about the implications of closing a Stripe account, and your responsibilities regarding the account, in our terms of service.
+Closing one Stripe account will not automatically close any other Stripe accounts you own. If you want to close all of your Stripe accounts, close each account individually.
+If the Stripe account was created through a third-party application, closing it via your Stripe Dashboard won't close your account with the third party. Similarly, deleting an account with a third-party application also does not delete the Stripe account connected to it. The only way to close a Stripe account is from the Stripe Dashboard as outlined above.
+Platforms can allow Express users to self-serve their own account closures.
+
+
+What can I do to make my account more secure?
+Follow these tips to keep your Stripe account, data, and funds secure. This page is intended for users of the Stripe Dashboard.
+
+Strengthen the security of your account
+Add multiple two-step authentication methods to your account in case you lose access to one. Users with two or more authentication methods enabled are much less likely to get locked out of their account.
+
+For example, adding both a passkey and an authenticator app means you can still sign in if you lose access to either method.
+Avoid SMS — use more secure two-step authentication methods instead. SMS messages are vulnerable to SIM swap and SS7 attacks.
+
+More secure methods include passkeys, authenticator apps, security keys, Touch ID, and Windows Hello.
+Make sure your backup code is stored in a safe place. Your backup code helps you recover access to your account if you lose access to two-step authentication.
+
+Add a backup email to your account. Your backup email helps you recover access to your account if you lose access to your primary email address.
+
+Never share your Stripe credentials. If multiple people need access to your account, invite them as team members in the Dashboard.
+
+If you're a team administrator, require two-step authentication for everyone on the Team settings page.
+Store and use your Stripe API keys safely. See Protecting against compromised API keys for details.
+
+Protect yourself from common attacks
+Bad actors sometimes contact Stripe users to attempt to steal credentials or exploit a compromised API key to gain additional access. Verified Stripe domains explains how to tell whether an email that claims to be from Stripe is actually from Stripe.
+
+Stripe is aware that bad actors who obtain Stripe users' API keys may try to trick users into enabling certain products under the threat of deactivation. Stripe does not deactivate users for not adopting Stripe products. If you've received such an email, follow the tips below and see Protecting against compromised API keys.
+
+Use a bookmark to sign in to Stripe. This prevents phishing sites impersonating Stripe from capturing your credentials.
+
+Bookmark dashboard.stripe.com and only use that bookmark when signing in.
+Check the URL of any sign-in page. Fraudsters may use misspelled versions of Stripe URLs that look similar.
+
+Always double-check that you are on dashboard.stripe.com when signing in.
+Don’t click on links if an email looks suspicious. Fraudsters sometimes send emails with phishing links while pretending to be Stripe.
+
+Only use your dashboard.stripe.com bookmark to sign in.
+If you’re using a shared computer, make sure to sign out when you’re done. This helps keep your account secure from other people using your device.
+
+Even if the other people using your device are trustworthy, they may inadvertently fall for a phishing attack.
+Only install browser extensions from companies you trust. Malicious browser extensions can compromise your security by reading your passwords.
+
+
+
+Contact options for GoFundMe and Stripe
+GoFundMe is available by email or live support via the GoFundMe Help Center. Their team can answer questions on the following:
+
+How GoFundMe works
+Running a successful campaign
+Managing a campaign
+Fundraising tips
+Connecting to Stripe
+Contact Stripe
+Stripe is best positioned for payment related questions, for ex., failed donations, missing withdrawals, fraud, chargebacks, and general payments processing. To make sure we can answer you as effectively as possible:
+
+Ensure you are logged in before contacting us. You will be prompted to do so on our contact page.
+Include as much information as possible (charge IDs like chXXX and payout IDs like poXXX).
+
+
+Set up account email notifications
+You can set up email notifications in your Stripe account for various events, such as successful payments, disputes, and elevated risk payments. Team members can enable or disable notifications in their user settings.
+Stripe can notify you of account activity via email, including when:
+
+A payment is successfully made to your Stripe account.
+
+A payment is disputed by a cardholder.
+
+A payment is marked as elevated risk by Stripe or by a custom rule in Stripe Radar.
+
+An application fee is collected from a connected account (if you are a Stripe Connect platform that collects application fees from connected accounts).
+
+A connected account or group of connected accounts has an upcoming, due, or past due risk requirement.
+
+This feature will be available to all Connect platforms by October 2025.
+A teammate mentions you in a note inside your Stripe account.
+
+Additional Information
+Email notifications can be enabled or disabled for each team member in their Communication preferences.
+
+Each team member can choose to receive or opt out of receiving any of the default notifications.
+Organization users can enable or disable emails for any account in their organization Communication preferences.
+If you're not receiving notifications or emails from Stripe as expected, see Not receiving email sent from Stripe.
+
+If there's a notification email that you want Stripe to consider implementing, send that feedback to Stripe Support.
+
+
+Update account name shown in the Dashboard
+You can update the account name shown on your Dashboard by updating it in Account Settings.
+
+Business name settings
+Stripe has two separate settings that control how your business name appears:
+
+Account name (in Account Settings): Controls what you see in the Dashboard for internal use only. This does not affect what customers see.
+Statement descriptor (in Public Details → Business Settings): Controls what appears on customer credit card statements and email receipts. This is what your customers see.
+Update your account name (Dashboard only)
+To change the account name shown in the Dashboard:
+
+Go to Account Settings
+Update the Account name field
+Save changes
+If you have multiple Stripe accounts, you can only edit the account you're currently viewing in the Dashboard.
+
+This change only affects what you see internally. It doesn't change what appears on customer receipts or bank statements.
+
+Update what customers see on receipts
+To change what appears on customer receipts and bank statements, you need to update your statement descriptor. See What is a statement descriptor and how do I update it?.
+
+
+Stripe availability for outlying territories of supported countries
+Businesses located in an outlying territory of a supported country are not currently supported.
+Commonly Requested Territories
+Businesses based in a British Crown Dependency (Jersey, Guernsey or Isle of Man) or a British Overseas Territory such as the British Virgin Islands are not currently supported.
+
+A business must be located in the United Kingdom of Great Britain and Northern Ireland to sign up with Stripe as a UK business.
+Businesses based in the US Virgin Islands or any other US territory or possession—with the exception of Puerto Rico—are not supported.
+
+A business must be located in the 50 states, Washington, D.C., or Puerto Rico to sign up with Stripe as a US business.
+Businesses based in a constituent country of the Kingdom of the Netherlands—Aruba, Curaçao, Sint Maarten, and the Caribbean Netherlands (Bonaire, Sint Eustatius, and Saba)—and other special municipalities are not currently supported.
+
+Businesses based in Martinique, Guadeloupe, French Guiana, Réunion, Mayotte, and Saint-Martin are currently supported. Businesses based in French Polynesia, Wallis et Futuna, New Caledonia, Saint Barthélemy, and Saint Pierre et Miquelon are currently not supported.
+
+A business must be located in Metropolitan France or within a French overseas region or territory that is within the European Economic Area to sign up with Stripe as a French business. Businesses in supported regions should register for a Stripe account with France selected as the Country.
+Additional Information
+We will continue to roll out support globally. See our our blog for updates.
