@@ -1,3 +1,4 @@
+![Stripe Support AI Assistant Banner](images/preview.png)
 # Stripe Support AI Assistant
 
 An AI-powered customer support assistant built with **FastAPI**, **ChromaDB**, **Retrieval-Augmented Generation (RAG)**, and **Groq's Llama-3.3-70B-Versatile**.
@@ -44,9 +45,12 @@ stripe-support-rag/
 ├── logo.png
 │
 └── data/
-    ├── account.txt
-    ├── payments.txt
-    └── refunds.txt
+│   ├── account.txt
+│   ├── payments.txt
+│   └── refunds.txt
+│
+└── images/
+    └── preview.png
 ```
 
 ---
@@ -132,3 +136,11 @@ http://127.0.0.1:8000
 ## License
 
 MIT License
+
+---
+
+## 👨‍💻 Author
+
+**Arshia Karkhanehie**
+
+GitHub: https://github.com/ArshiaA99
