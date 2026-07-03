@@ -1,0 +1,342 @@
+Payments
+There are several ways to accept payments on Stripe. Starting from scratch, you can use Stripe’s prebuilt payments modules in your website or publishing platform. For developers seeking customization, build your own integration using Stripe's APIs and client-side libraries.
+
+In this section, you can learn about how to set up Stripe Checkout, how to collect payments, how currency conversion and other unique circumstances impact your payments, and more. You can also visit the Payments section of the Stripe Docs for more information.
+
+
+How to refund a customer
+You can refund non-disputed payments to customers directly from the Payments overview page in the Dashboard or using the Stripe API. The default refund amount is the full charge amount, but you can adjust the amount to give a partial refund.
+Refund non-disputed payments to your customers using the Stripe API or directly from the Dashboard--see instructions below for both methods. Refunds take 5-10 days to process and appear on the customer's account. Because of the limited window to cancel a refund, we recommend using test mode to try out the process if needed--see below for more information.
+
+From the Dashboard
+Find the charge to be refunded in the Payments overview page.
+Click the ••• icon to the right of the charge and select Refund payment. Alternatively, click on the charge and click the Refund button on the top right corner of the payment page.
+The default refund is for the full amount. For a partial refund, enter a different amount to be refunded.
+Select a reason for the refund. If you select Other, you must provide an explanatory note that is attached to the refund.
+Click Refund.
+Using the Stripe API
+Create a create_refund call in the API.
+
+In the API call, include the charge ID to refund.
+To refund an amount different than the full charge amount, include the amount parameter and enter the amount to refund. If no amount is entered, the default action will be a refund of the full charge amount.
+Run the API call.
+Use test mode to try out the refund process
+Once you’ve initiated a refund, you have a very limited window to cancel. You can use test mode to try out the process beforehand. To enter test mode from the account picker in the upper left corner of the Dashboard: select Switch to sandbox then click Test mode. Once in test mode, you can try creating refunds before actioning on the live charges. Actions taken in test mode use the test API key, which means no real transactions are processed, not changes made to your actual customers. Learn more about test mode and sandboxes.
+
+Additional Information
+Understanding fees for refunded payments
+Canceling a refund
+
+
+Get started with Stablecoin Payments
+How can I enable Stablecoin Payments?
+To enable Stablecoin Payments:
+
+Visit your payment methods settings on the Dashboard and request the Stablecoin and Crypto payment method.
+Fill out your business’s information and accept the terms on the page.
+If your account is approved after our review, the Stablecoin and Crypto payment method will become active in the Dashboard.
+If the payment method is pending, this means we’re still reviewing your candidacy. We may reach out to you for more details.
+payment method settings screenshot
+If you're unable to onboard or don't see Crypto as a payment method in your Settings, we are unable to support your account at this time. We're working quickly to expand this capability to more accounts.
+
+For more information on what to consider before onboarding, visit the Stablecoin Payments onboarding docs.
+
+Which cryptocurrencies are supported for Stablecoin Payments?
+When using Stablecoin Payments, your customers can pay in:
+
+USDC on Ethereum, Solana, Base, and Polygon
+USDP on Ethereum, Solana, and Base
+USDG on Ethereum
+All exchange-supported tokens on Crypto.com
+The funds will settle in your Stripe balance in USD.
+
+How can I confirm a Stablecoin Payment was successful?
+If your customer successfully paid using Stablecoin Payments, you will see the payment reflected as “successful” on the Dashboard.
+
+What settlement currencies are available for Stablecoin Payments?
+Stablecoin Payments is only available to US merchants. The settlement currency is limited to USD.
+
+How can I refund my customers if they paid with Stablecoin Payments?
+If your customer paid using stablecoins and crypto, you can issue a refund by following the Refunds flows.
+
+After the refund is completed, the payment will update to refunded on your Stripe Dashboard. Your customer will receive the refund as stablecoins in their original wallet.
+
+
+Waiting on your first Stripe payout? What you need to know
+This article helped 95% of Stripe users solve their issue.
+
+There is a 7-14 day waiting period for the first payout. This delay is necessary for risk mitigation and cannot be waived under any circumstances.
+Any updates made to your payout method or schedule during this time will take effect after the waiting period has ended. Check your estimated payout schedule in the Dashboard.
+
+Delays more than 7-14 days
+The waiting period is typically 7 days, but your first payout might take longer, depending on your industry risk level and country of operation. The waiting period can be up to 14 days for businesses in certain industries and up to 30 days in countries such as Brazil. See a full list of payout schedules by country.
+
+If you haven’t received your first payout after the designated waiting period see: Where is my payout? FAQ for missing and late payouts.
+
+Other reasons for delay
+Bank related delays - Bank processing can be delayed by weekends and holidays. Once the bank has finished processing your payout, the funds will be deposited into your account automatically.
+Account verification issues  - Check your account status in the Dashboard or your email to see if additional information is required to verify your account. You can also check which bank account is linked to your Stripe account.
+
+
+Charge you don't recognize from Stripe?
+This page is for customers of businesses that use Stripe.
+
+If your bank statement has a charge from Stripe that you don't recognize, it may be from a business using Stripe's payment processing services. Use our secure charge lookup tool to identify the business. Contact the business directly or reach out to your bank if you need a refund or suspect fraudulent activity. Stripe cannot issue refunds on behalf of the business.
+Stripe is a payments processor that works with businesses to help them accept payments through their websites, apps, and in store. If you see a charge from “STRIPE” on your credit card statement, it’s likely you purchased something from a business that uses our services and the business name isn't reflected in the bank statement descriptor. Use the secure charge lookup tool to identify the business.
+
+If you don't recognize the business name or want a refund, reach out to the business directly. Stripe is unable to issue refunds on their behalf.
+
+If you can't get in touch with the business, they're unresponsive, or you believe the business might be fraudulent, reach out to your bank. They should have recommendations for how to proceed, such as opening a dispute.
+
+
+Instant Bank Payments
+What are Instant Bank Payments?
+Instant Bank Payments let your customers pay with a US bank account with Link. Unlike ACH Direct Debit, Instant Bank Payments deliver instant confirmation and faster settlement, protection from common ACH failures, and an accelerated checkout experience for your customers. They are best for businesses that need to deliver their products and services immediately and don't want to manage the risk of processing ACH transactions.
+
+Instant Bank Payments are automatically enabled when you turn Link on, subject to eligibility requirements. On sites where it’s enabled, Link saves and autofills payment details for customers.
+
+Are Instant Bank Payments the same as ACH Direct Debit?
+Unlike ACH Direct Debit, where it can take up to four business days to successfully process a transaction, Instant Bank Payments are instantly confirmed. Settlement timing matches your card payments and you're protected from bank-initiated returns that might occur after authorization. Learn more about these US bank debit options.
+
+If a transaction is eligible for Instant Bank Payments, your customer will see a Bank option.
+
+If you have enabled ACH Direct Debit on Payment Element or Checkout, they'll see it as a US bank account option.
+
+
+How do I enable Instant Bank Payments?
+Instant Bank Payments are available with every Link integration, if eligible. Just ensure Link is turned on in your payment method settings and it will be automatically presented as a payment option to your US customers. See the technical documentation for details on how to view Instant Bank Payment transactions.
+
+I have Link enabled. Why don't I see Bank as a payment option on my checkout page?
+Not all businesses and transactions are eligible for this payment method. Instant Bank Payments will be presented as a payment option during a session only when certain risk criteria are met. Some examples are:
+
+Two-step authentication: Enable two-step authentication on your Stripe account.
+Onboarding criteria: Satisfy a set of onboarding criteria, including but not limited to being a US business and having a history of Stripe usage.
+Transaction limits: Eligible transactions must be below an order amount dynamically set by our risk systems. By default, Instant Bank Payments are presented as an option only for transactions under $500.
+ACH Direct Debit: If you have enabled ACH Direct Debit for a transaction, then Instant Bank Payments will not be presented as a payment option.
+How do I handle disputes?
+Disputes with Instant Bank Payments behave like cards, not like ACH Direct Debit. Like cards, when a dispute is created, Stripe debits your balance for the payment amount and dispute fee. Disputes can be viewed and challenged from within the Stripe Dashboard.
+
+With bank debits, customers can generally dispute a payment through their bank for up to 60 calendar days after a debit on a personal account, or up to 2 business days for a business account. In rare instances, a customer might be able to successfully dispute a debit payment outside these standard dispute timelines.
+
+What are cash back offers?
+To boost your conversion and revenue, you can opt into Stripe cash back offers for your customers who choose to pay with Link using their bank account. There is no cost to you or your business. Manage your participation in this program at any time via the Settings page. To redeem the offer, customers must check out with their bank account and then the discount will be automatically deposited within 3-5 days. See eligibility details.
+
+
+Monetizing currency conversion (FX) fees
+This article outlines FX monetization specifically for Connect platforms that pay currency conversion fees on behalf of their connected accounts.
+Deciding whether to monetize currency conversion fees
+As a platform you have three options on how to monetize currency conversion fees:
+
+Absorb Stripe currency conversion fees
+
+You may not want to pass on currency conversion fees to your connected accounts if you’re charging an overall flat fee, regardless of whether a given transaction incurs currency conversion fee or not.
+
+Pass through Stripe currency conversion fee
+
+You may want to pass on currency conversion fees you incur from Stripe. To do this you need to know the Stripe currency conversion fees you will be charged. See Stripe’s sticker currency conversion fee in the Payments section of our pricing page. Negotiated currency conversion fees differ.
+
+Mark up Stripe currency conversion fee for your connected accounts
+
+Where it fits your business model you may want to charge a mark-up for currency conversion to your connected accounts.
+
+Where can I monetize currency conversion fees?
+You can monetize currency conversions across the following money movements:
+
+Destination charges
+Direct charges
+Transfers
+Platforms can monetize these money movements through API logic, account debits, and platform SaaS fees. Destination charges with application fees and direct charges can also be monetized through the platform pricing tool. Destination charges with transfer_data and transfers can’t be monetized with the pricing tool.
+
+Monetizing currency conversion fees with the platform pricing tool
+The platform pricing tool is the simplest approach to monetizing currency conversion fees. You can set pricing specifically for direct charges and destination charges with application fees.
+
+For any existing pricing scheme you can add additional fees, selecting “Currency conversion” as the condition. The fee defined here is applied on top of all other pricing specified in that pricing scheme, in all cases where currency conversion occurs.
+
+Set the rate to match the Stripe currency conversion fee rate if you want to pass through the cost, or mark up the rate if you want to monetize on currency conversion.
+
+Destination charges first settle in the platform account before being immediately transferred to the connected account. Pricing defined in the platform pricing tool for destination charges only applies to the settlement to the platform account, not the transfer to the connected account.
+
+Monetizing currency conversion fees in the API logic
+Monetizing currency conversion fees in the API logic involves two steps:
+
+Identify whether a money movement will involve currency conversion
+Set the monetization details for money movements with currency conversion
+1. Identify whether a money movement will involve currency conversion
+
+Any money movement will involve currency conversion when the starting, or "source", currency is different from the "settlement" currency, the currency that settles in the Stripe balance. This diagram outlines the logic to determine whether the source currency will differ from the settlement currency.
+
+flow chart showing whether source currency will differ from settlement currency. where platforms are the MOR currency conversion occurs when source currency is neither the platform's local currency nor enabled for multicurrency settlement on the platform. where connected accounts are the MOR currency conversion occurs when the source currency is neither the connected account's local currency nor enabled for multicurrency settlement on the connected account. 
+Start by determining the merchant of record, the legal entity responsible for facilitating the money movement. For destination charges without the on_behalf_of parameter (OBO), the merchant of record is the platform account. For all other applicable money movements (destination charges with OBO, direct charges, transfers), the merchant of record is the connected account.
+
+Check whether you’ve enabled multi-currency settlement (MCS) for a given currency in the payout settings for your platform account.
+
+Check whether MCS for a given currency is enabled for a connected account by validating that they’ve successfully added an external bank account for the specific source currency. To do this you can query external accounts with the V1 Accounts API.
+
+When multi-currency settlement is enabled for a given source currency, the money movement settles in the source currency and no currency conversion occurs. If MCS isn’t enabled, then currency conversion occurs and the funds settle in the merchant of record’s default currency.
+
+2. Set the monetization details for currency conversion
+
+Once you can identify transactions on which currency conversion occurs you can update your billing logic. The table below describes an example case of charging your connected accounts a 2% fee every time a money movement incurs currency conversion.
+
+Money movement	How to charge your connected accounts 2% of the transaction amount
+Destination charges w/ application fees	Add 2% of the transaction amount to the application fee you charge in the v1 Payment Intents API
+Destination charges w/ transfer_data	Reduce the transfer_data[amount] in the v1 Payment Intents API by 2% of the transaction amount
+Direct charges	Add 2% of transaction amount to the application fee you charge in the v1 Payment Intents API
+Transfers	Reduce the transfer amount in the v1 Transfers API by 2%
+Cross-border payouts can occur as part of a destination charge, or a stand-alone transfer (for example as part of separate charges and transfers, or as top-ups and transfers).
+
+When a cross-border payout happens as part of a destination charge, you can monetize the currency conversion fee by updating the application fee or transfer data amount with the v1 Payment Intents API.
+
+Monetizing currency conversion fees using Account Debits or SaaS fees
+You can retroactively charge your connected accounts for currency conversion fees using Account Debits or by adding a markup to your existing invoices.
+
+Determine which transactions have incurred currency conversion fees with the all fees report or by querying fees data. To query fees data, use the below query and aggregate by the incurred_by field for a given connected account.
+
+SELECT amount, currency, incurred_at, incurred_by  
+FROM itemized_fees
+WHERE product_feature_description = 'Stripe FX fee' 
+Additional information
+Explicit currency conversion fees
+
+
+FAQ for customers of businesses using Stripe
+This page is for customers of businesses that use Stripe.
+
+What is Stripe?
+What should I do if I don't recognize a charge from Stripe?
+Why is there a $1 charge on my bank statement? 
+What should I do if the business is having issues processing my payment?
+How do I get a refund?
+How do I cancel subscriptions from a business using Stripe?
+What should I do if I have an issue with a purchase I made?
+I don't recognize a charge and I've tried to get in touch with the business. How can I get my money back?
+I was a victim of fraud. What should I do?
+I disputed a payment. When will I get my money back?
+What is Stripe?
+Stripe is a payment service provider that millions of businesses use to accept payments, send payouts, and manage their businesses online.
+
+You might see a charge on your bank statement saying "STRIPE". In most cases, you’ve purchased something from a business that uses Stripe to process their payments and the business name wasn’t reflected correctly on your bank statement.
+
+What should I do if I don't recognize a charge from Stripe?
+If you notice an unknown charge saying "STRIPE" on your bank statement and you’re unsure which business has charged you, you can use our secure charge lookup tool to search for the business.
+
+Why is there a $1 charge on my bank statement? 
+Customers may sometimes notice a pending charge of $1 on their bank statements as part of the card authorization process. This is a temporary authorization charge that will eventually be removed from the statement.
+
+Stripe sends a request to the customer's bank for a $0, $1, or similar amount to verify the validity of the card and ensure it can be authorized by the bank.
+
+What should I do if the business is having issues processing my payment?
+Contact the business you were attempting to make a purchase with. They can investigate the issue and, if necessary, reach out to Stripe for assistance.
+
+How do I get a refund?
+Stripe is unable to issue refunds on behalf of businesses.
+
+To initiate a refund, you’ll need to contact the business directly. See Privacy Practices for Refunds to End Customer Bank Accounts (End Customers) for more information.
+
+How do I cancel subscriptions from a business using Stripe?
+Stripe is not authorized to cancel subscriptions on behalf of the businesses using Stripe.
+
+If you have a recurring subscription charge on your bank statement from a business using Stripe that you would like to cancel, you’ll need to contact the business directly. 
+
+What should I do if I have an issue with a purchase I made?
+If you are facing an issue with a purchase, require an update on an order, or have not yet received your item, we suggest reaching out to the business directly to resolve the issue. You can utilize the charge lookup tool to obtain their contact information.
+
+If the business remains unresponsive, we recommend contacting your bank for assistance, as they may offer guidance on how to proceed, including the possibility of initiating a dispute.
+
+I don't recognize a charge and I've tried to get in touch with the business. How can I get my money back?
+Stripe is not authorized to issue a refund on behalf of the business. Reach out to your bank for next steps if you are unable to get in touch with the business, they are unresponsive, or you believe the business might be fraudulent.
+
+Your bank may have recommendations for how to proceed, such as opening a dispute.
+
+I was a victim of fraud. What should I do?
+If you believe you have been a victim of fraud, report the fraudulent charge to your bank and file a dispute. When you file a dispute, your bank passes all relevant details to Stripe. We use this data in our ongoing effort to combat fraud.
+
+I disputed a payment. When will I get my money back?
+When a card issuer creates a dispute on your behalf, the card network immediately debits Stripe for the disputed amount. From that point forward, it's up to the card issuer to decide when they return funds to their cardholder.
+
+
+Payout paused due to pending withdrawal for negative balance
+If you have a negative balance and Stripe has initiated a withdrawal to bring your account back to positive, any upcoming payouts in the currency being withdrawn will be paused to allow time for the withdrawal to complete. If your payouts are delayed for this reason, you'll see a banner in your Dashboard: A withdrawal from your bank account is pending.
+
+Dashboard banner: A withdrawal from your bank account is pending.
+Once the withdrawal is complete, your payouts resume according to your account's payout schedule. Withdrawals typically take around three business days to clear.
+
+You can see the dates and amounts of the withdrawal as well as your upcoming payouts in your Balances overview. Click the All activity tab to see any pending activity.
+
+Can I be exempted from a payout delay?
+No. Once Stripe initiates a withdrawal from your bank account, payouts resume on your regular schedule after the withdrawal succeeds, typically within three to five business days.
+
+I see a successful debit on my bank statement. Why haven't my payouts resumed?
+Once the withdrawal completes, your payouts resume automatically. This may take one to two days.
+
+Is this a one-off occurrence, or will it affect my payout schedule permanently?
+Payouts are paused only while your account balance is negative and resume once the withdrawal is complete and the negative balance is cleared. If your balance returns to negative, payouts may pause again.
+
+How can I avoid future pauses?
+Reduce the frequency of your automatic payouts to allow for a positive balance buffer. Adjust your payout schedule via the Dashboard on the Business settings page under Bank accounts and currencies > Payout schedule.
+
+The withdrawal has failed. What can I do?
+Add funds to your Stripe account by setting up a bank or wire transfer from your Dashboard.
+
+If you prefer Stripe to debit your bank account to cover the negative balance, update your bank account information with an account that Stripe is permitted to debit to cover your current and future negative balances.
+
+Additional information
+Fix the negative balance on your account
+Late or missing payouts
+Update existing bank account information
+UK instructions to check whether Direct Debit Instructions (DDI) are active
+
+
+Manually entered card payments
+A manually entered card payment is a transaction where a customer's card details are typed into and processed on the Dashboard or with Stripe Terminal Mail Order and Telephone Order (MOTO) processing. Transaction fees for manually entered card payments are higher due to the increased fraud rates associated with collecting card details by phone or other unencrypted sources. Alternatives to manually entering card information include Payment Links, Hosted Invoices, Third-party integrations, and Terminal.
+What is a manually entered card payment?
+A manually entered card payment is a transaction in which a customer’s card details have been typed into and processed on the Dashboard or with Terminal MOTO. This includes the following:
+
+One-time payments where the customer’s card details have been entered into the Dashboard or with Terminal MOTO at the time of transaction.
+One-time payments using a saved card on file whose details were previously entered into the Dashboard or with Terminal MOTO.
+The first subscription payment using a card whose details have been typed into the Dashboard. All subsequent subscription payments using that card will be charged the standard 2.9% + 0.30 USD card processing fee.
+Why are transaction fees higher for manually entered card payments?
+Transaction fees on cards entered manually in the Dashboard or with Terminal MOTO are 3.4% + 0.30 USD for businesses on standard pricing based in the US, and 3.4% + 0.30 CAD for businesses based in Canada, Standard card payments are 2.9% + 0.30 USD in the US, and 2.9% + 0.30 CAD in Canada.
+
+The higher fees reflect the cost of higher fraud rates associated with collecting customer card details by phone or other unencrypted sources. Directly typing in sensitive customer data bypasses much of the security that’s built into Stripe’s online payments. We see higher fraud rates on manually entered payments, leading to higher costs for Stripe.
+
+What are alternatives to manually entering card information?
+Below are alternatives to consider for more secure and easy-to-use payment options that allow your customer to directly enter their card information:
+
+Payment option	Pricing for US businesses	Pricing for Canadian businesses
+​Payment Links​	2.9% + 0.30 USD per transaction	2.9% + 0.30 CAD per transaction
+​Hosted Invoices​	Starting at 3.3% + 0.30 USD per paid invoice	Starting at 3.3% + 0.30 CAD per paid invoice
+​Third-party integration​	Price varies	Price varies
+​Terminal​	2.7% + 0.05 USD per transaction	2.7% + 0.05 CAD per transaction
+3D Secure (3DS) and manually entered card payments
+In the context of Strong Customer Authentication and Japan’s 3DS mandate, card details collected over the phone or by mail do not require authentication. Payments made by manually entering card details are automatically marked as MOTO by Stripe.
+
+PCI (Payment card industry) compliance burden and manually entered card payments
+When card information is manually entered into the Dashboard or with Terminal MOTO, we can’t verify that it’s being kept secure outside of Stripe. You’re responsible for ensuring the protection of card data in accordance with PCI compliance requirements. Refer to our PCI DSS compliance guide to better understand PCI requirements.
+
+If you need to process phone and mail payments via the Dashboard, API, or Stripe Terminal, contact us to enable this feature on your Stripe account.
+
+Additional info
+Mail Order Telephone Order (MOTO) transactions: when to categorize transactions as MOTO
+
+
+Card payments in Malaysia
+Card payments in Malaysia are subject to authentication using 3D Secure, which introduces an extra layer of security for customers making purchases online. To avoid an increase in declines when transacting with Malaysian cardholders, you might need to make integration changes.
+
+Stripe Checkout supports payment authentication out the gate. If you’re using the Charges API, which does not support authentication, you will need to make changes to your integration. The Payment Intents API and Setup Intents API both support authentication, however you need to ensure your integration can handle the requires_action state as this will prompt your customers to authenticate their payments. If you’re not sure if your integration can handle authentication or are receiving a large amount of declines due to authentication_required, we recommend testing your integration with our 3D Secure authentication test cards.
+
+Frequently Asked Questions
+Why do card payments need to be authenticated?
+As a payment service provider, Stripe aims to keep bad actors out of the payment ecosystem and deter fraudulent activities that impact both our users and their customers. As online scams/fraudulent activities are reportedly on the riseA in Malaysia, Stripe has taken precautionary steps to enhance the mitigation measures, such as requesting customer authentication when a suspicious payment activity is detected. Stripe’s enhanced efforts to deter fraudulent activities are in line with Malaysia’s regulatory expectations of payment service providers, and aims to mitigate the impact of fraudulent transactions.
+
+What is 3D Secure?
+3D Secure, or 3DS for short, is an authentication protocol used to add an extra layer of security to online transactions. When a transaction is authenticated using 3DS, liability for any fraudulent activity shifts to the issuing bank. This additional security comes with a tradeoff, namely an extra step during the checkout flow.
+
+I am using the Charges V1 API. Do I need to make changes to my payments integration?
+Yes, the Charges API V1 does not support authentication, so you will need to migrate to the Payment Intents API. It is important to test your integration to ensure it can handle authentication requests. Otherwise you will see an increase in declined payments with error code authentication_required.
+
+I have the Payment Intents API or Setup Intents API, but I can't process Card payments in Malaysia. What do I need to do to fix this?
+The Payment Intents API and Setup Intents API both support authentication, however you need to ensure your integration can handle the requires_action state as this will prompt your customers to authenticate their payments.
+
+I am not sure if my current integration can handle authentication or I am receiving a large amount of declines due to authentication_required, how can I look into this?
+If you are not sure, we recommend testing your integration with our 3D Secure authentication test cards to get the best understanding of the path forward.
